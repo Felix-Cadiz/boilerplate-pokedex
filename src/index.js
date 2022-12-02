@@ -1,6 +1,7 @@
 import react, { useState, useEffect } from "react";
 import {createRoot} from "react-dom/client";
 import {Pokemon} from "./components/index.js";
+import "./style.css"
 
 const App = () => {
     return <>

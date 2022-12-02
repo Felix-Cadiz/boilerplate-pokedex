@@ -25,14 +25,18 @@ const Pokemon = () => {
     }, [pokemonNumber])
 
     return <>
-        <h1> Pokedex </h1>
-        <h2>{name}</h2>
-        <img src={image} />
-        <button onClick={() => setPokemonNumber(pokemonNumber - 1)}>-</button>
-        <form>
-            <input type="number" onChange={(event) => formHelper(event)}/>
-        </form>
-        <button onClick={() => setPokemonNumber(pokemonNumber + 1)}>+</button>
+        <div id="container">
+            <h1> Pokedex </h1>
+            <h2>{name}</h2>
+            <img src={image} />
+            <form>
+                <input type="number" onChange={(event) => formHelper(event)}/>
+            </form>
+            <div id="buttons">
+                <button onClick={() => setPokemonNumber(pokemonNumber - 1)}>-</button>
+                <button onClick={() => setPokemonNumber(pokemonNumber + 1)}>+</button>
+            </div>
+        </div>
     </>
 }
 
